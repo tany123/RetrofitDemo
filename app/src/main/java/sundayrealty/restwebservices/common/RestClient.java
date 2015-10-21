@@ -11,7 +11,7 @@ public class RestClient {
 
     private static Restapi REST_CLIENT;
     private static String ROOT =
-            "http://115.124.127.124/smartagentrest/smartagent.asmx";
+            "your_URL/dumy.asmx";
 
 
     static {
