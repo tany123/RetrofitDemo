@@ -74,9 +74,7 @@ public class MainActivity extends Activity implements ServiceListner {
 
     private void call_webservice_2() {
 
-        String url = "http://115.124.127.124/SmartAgentRest/Default.aspx";
-        //            + "?Type=AgentContactCount";
-//                + "&sMyAgentID=35&sCount=0&sMisType=Call";
+        String url = "your_URL/Default.aspx";
 
 
         RequestParams params = new RequestParams();
@@ -104,9 +102,7 @@ public class MainActivity extends Activity implements ServiceListner {
 
     private void call_webservice() {
 
-        String url = "http://115.124.127.124/SmartAgentRest/Default.aspx";
-//                + "?Type=AgentContactCount"
-//                + "&sMyAgentID=35&sCount=0&sMisType=Call";
+        String url = "your_URL/dumy.asmx/Default.aspx";
 
         StringRequest req = new StringRequest(Request.Method.POST,
                 url, new Response.Listener<String>() {
@@ -143,9 +139,7 @@ public class MainActivity extends Activity implements ServiceListner {
     private void call_webservice_3() {
         String tag_json_obj = "json_obj_req";
 
-        String url = "http://115.124.127.124/SmartAgentRest/Default.aspx";
-        //            + "?Type=AgentContactCount";
-//                + "&sMyAgentID=35&sCount=0&sMisType=Call";
+        String url = "your_URL/Default.aspx";
 
 
         JsonObjectRequest jsonObjReq = new JsonObjectRequest(Method.POST,
@@ -186,7 +180,7 @@ public class MainActivity extends Activity implements ServiceListner {
     private void call_webservice_4() {
         String tag_json_obj = "json_obj_req";
 
-        String url = "http://115.124.127.124/smartagentrest/smartagent.asmx/AgentContactCount";
+        String url = "your_URL/dumy.asmx/Count";
 
 
         StringRequest req = new StringRequest(Request.Method.POST,
@@ -226,7 +220,7 @@ public class MainActivity extends Activity implements ServiceListner {
     private void call_webservice_5_svc() {
         String tag_json_obj = "json_obj_req";
 
-        String url = "http://115.124.127.124/WCFRest/DiscoveryPortal.svc/GetEmployeeDetails";
+        String url = "your_URL/DiscoveryPortal.svc/Details";
 
 
         StringRequest req = new StringRequest(Request.Method.POST,
@@ -300,7 +294,7 @@ public class MainActivity extends Activity implements ServiceListner {
 
     public JSONObject request_web() {
 
-        String URL = "http://115.124.127.124/WCFRest/DiscoveryPortal.svc/GetEmployeeDetails";
+        String URL = "your_URL/DiscoveryPortal.svc/Details";
         JSONObject json_obj = null;
 //        try {
 //            HttpPost req = new HttpPost(URL);
